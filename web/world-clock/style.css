@@ -1,0 +1,96 @@
+/* Dark Modern Theme */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Shared Card Style */
+.clock-container, .chart-container {
+  background: #1e1e1e;
+  padding: 24px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  width: 95%;
+  max-width: 900px;
+  transition: transform 0.3s ease;
+}
+.clock-container:hover,
+.chart-container:hover {
+  transform: scale(1.01);
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #90caf9;
+  text-align: center;
+}
+
+.clock {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #c5e1a5;
+  margin-bottom: 10px;
+}
+
+.clock-container div {
+  margin-bottom: 10px;
+}
+
+/* Table Styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.95em;
+}
+
+th {
+  background-color: #263238;
+  color: #90caf9;
+}
+
+td {
+  background-color: #1c1c1c;
+}
+
+.label-col {
+  font-weight: bold;
+  background-color: #2e2e2e;
+  color: #aed581;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .clock-container, .chart-container {
+    padding: 16px;
+    margin: 10px;
+  }
+
+  .clock {
+    font-size: 1.2em;
+  }
+
+  table {
+    font-size: 0.75em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+}

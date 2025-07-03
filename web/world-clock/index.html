@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>World Clock & Time Chart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="clock-container">
+    <h2>Live World Clock</h2>
+    <div><strong>India (IST):</strong> <span id="india-time" class="clock"></span></div>
+    <div><strong>China (CST):</strong> <span id="china-time" class="clock"></span></div>
+    <div><strong>Japan (JST):</strong> <span id="japan-time" class="clock"></span></div>
+  </div>
+  <div class="chart-container">
+    <h2>24-Hour Time Comparison</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>UTC Hour</th>
+          <th>India (IST)</th>
+          <th>China (CST)</th>
+          <th>Japan (JST)</th>
+        </tr>
+      </thead>
+      <tbody id="time-table-body">
+        <!-- Rows will be inserted by script.js -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    updateClocks();
+    setInterval(updateClocks, 1000);
+    generateTableRows();
+  </script>
+</body>
+</html>
