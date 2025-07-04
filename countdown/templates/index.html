@@ -8,6 +8,14 @@
 <body>
     <div class="container">
         <h1>📚 Media Tracker</h1>
+        <div id="filterBar">
+            <label for="filterType">Filter:</label>
+            <select id="filterType">
+                <option value="all">All</option>
+                <option value="book">Books</option>
+                <option value="show">Shows</option>
+            </select>
+        </div>
         <form id="addForm">
             <input type="text" id="title" placeholder="Title" required>
             <select id="type">
@@ -20,14 +28,6 @@
             <button type="submit">Add</button>
         </form>
 
-        <div id="filterBar">
-            <label for="filterType">Filter:</label>
-            <select id="filterType">
-                <option value="all">All</option>
-                <option value="book">Books</option>
-                <option value="show">Shows</option>
-            </select>
-        </div>
 
         <div id="countdownList"></div>
     </div>
