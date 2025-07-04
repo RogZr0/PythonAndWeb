@@ -2,11 +2,21 @@
     {
         "releaseDate": "2025-07-05",
         "title": "LOTM EP 3",
-        "type": "book"
+        "type": "show"
     },
     {
         "title": "COTE Y3 V2",
         "type": "book",
         "releaseDate": "2025-07-25"
+    },
+    {
+        "title": "Primal Hunter 13",
+        "type": "book",
+        "releaseDate": "2025-07-23"
+    },
+    {
+        "title": "King's Dark Tidings",
+        "type": "book",
+        "releaseDate": "2025-09-01"
     }
 ]
