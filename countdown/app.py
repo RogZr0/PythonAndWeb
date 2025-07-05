@@ -19,8 +19,12 @@ def save_data(data):
         json.dump(data, f, indent=4)
 
 @app.route('/')
-def index():
-    return render_template('index.html')
+def media_tracker():
+    return render_template('media_tracker.html')
+
+@app.route('/world-clock')
+def world_clock():
+    return render_template('world_clock.html')
 
 @app.route('/data', methods=['GET', 'POST', 'DELETE'])
 def data_handler():
@@ -28,9 +32,9 @@ def data_handler():
         return jsonify(load_data())
     elif request.method == 'POST':
         new_data = request.get_json()
-        if isinstance(new_data, list):  # overwrite all
+        if isinstance(new_data, list):
             save_data(new_data)
-        else:  # append new item
+        else:
             data = load_data()
             data.append(new_data)
             save_data(data)

@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/world_clock.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="module-container">
+    <div class="clock-container">
+        <h2>🌍 Live World Clock</h2>
+        <div class="clock-row"><strong>India (IST):</strong> <span id="india-time" class="clock"></span></div>
+        <div class="clock-row"><strong>China (CST):</strong> <span id="china-time" class="clock"></span></div>
+        <div class="clock-row"><strong>Japan (JST):</strong> <span id="japan-time" class="clock"></span></div>
+    </div>
+    <h2>🕓 24-Hour Time Comparison</h2>
+    <div class="chart-scroll">
+        <table class="time-chart">
+            <thead>
+                <tr>
+                    <th>UTC</th>
+                    <th>India (IST)</th>
+                    <th>China (CST)</th>
+                    <th>Japan (JST)</th>
+                </tr>
+            </thead>
+            <tbody id="time-table-body"></tbody>
+        </table>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/world_clock.js') }}"></script>
+{% endblock %}

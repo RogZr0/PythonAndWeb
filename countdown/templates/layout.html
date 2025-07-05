@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Utility Suite</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/shared.css') }}">
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <div class="sidebar">
+        <h2>🛠️ Utilities</h2>
+        <ul>
+            <li><a href="/">📚 Media Tracker</a></li>
+            <li><a href="/world-clock">🌍 World Clock</a></li>
+        </ul>
+    </div>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

@@ -1,0 +1,56 @@
+/* === World Clock Specific Styles === */
+
+.module-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2c2c3e;
+}
+
+.clock-row {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.chart-scroll {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.time-chart {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #2c2c3e;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.time-chart th,
+.time-chart td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+.time-chart th {
+    background-color: #1e1e2f;
+    color: #7f5af0;
+}
+
+.time-chart td {
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .time-chart th,
+    .time-chart td {
+        font-size: 0.9rem;
+        padding: 6px;
+    }
+}
